@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Catalog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">My Library</div>
+        <div class="sidebar">
+            <form <form action="" method="get" id="getInfo">
+                <ul class="input">
+                    <li><label for="title">Title:</label><span>*</span>
+                        <input type="text" id="title" required></li>
+                    <li><label for="author">Author:</label><span>*</span>
+                        <input type="text" id="author" required></li>
+                    <li><label for="pages">Pages:</label><span>*</span>
+                        <input type="number" id="pages" required></li>
+                    <li><label for="read">Already Read?</label>
+                        <input type="checkbox" id="read"></li>
+                </ul>
+                <button type="submit" class="submit">Add to Library</button>
+            </form>
+        </div>
+        <div class="header">Something will go here</div>
+        <div class="library">
+        </div>
+    </div>
+    <script src='./script.js' ></script>
+</body>
+</html>

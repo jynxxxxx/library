@@ -1,0 +1,76 @@
+li{
+    list-style-type: none;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 20% 1fr;
+    min-height: 100vh;
+}
+
+.sidebar{
+    grid-column: 1/2;
+}
+
+.library {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-image: url("./images/shelf.png"), url("./images/backdrop.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: auto 400px , cover; /* Auto width and 100% height for both images */
+    background-position: top, center; /* You can adjust this if needed */
+    width: 100%; /* Full width of the container */
+    height: 100%;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(3, 400px); /* Creates 3 columns of 400px each */
+    grid-auto-flow: dense; /* Automatically fills up to 3 columns before moving to the next row */
+    justify-content: space-around;
+    padding-top: 24px;
+    row-gap: 100px;
+}
+
+.header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.card{
+    height: 300px;
+    width: 400px;
+    background-image:  url("./images/book.png");
+    background-size: 350px 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.removebtn{
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
+
+.txt{
+    width: 200px;
+    margin-left: 40px; 
+    font-size: 30px;
+    text-align: center;
+}
+
+.icon{
+    height: 34px;
+}
+
+.read{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+}
